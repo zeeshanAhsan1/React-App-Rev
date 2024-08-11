@@ -7,6 +7,8 @@ import TabButton from "./components/TabButton.jsx";
 
 function App() {
   //const stateArray = useState("Please click a button");
+  // selectedTopic -> The item/state currently rendered
+  // setSelectedTopic -> The item/state to be rendered after the UI change.
   const [selectedTopic, setSelectedTopic] = useState("Please click a button");
   let tabContent = "Please click a button";
 
@@ -14,8 +16,9 @@ function App() {
     // selectedButton => 'components', 'jsx', 'props', 'state'
     // console.log(selectedButton);
     // tabContent = selectedButton;
-    setSelectedTopic(selectedButton);
+
     console.log(selectedTopic);
+    setSelectedTopic(selectedButton);
   }
 
   return (
